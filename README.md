@@ -1,4 +1,4 @@
-# cezar
+# caesar
 
 The goal of this project is to implement caesar cipher (and others).
 
@@ -15,7 +15,7 @@ Just run
 java Main MODE FILE
 ```
 
-Avaiable modes are:
+Available modes are:
 - `DECODE`
 - `ENCODE`
 - `PASS` (do nothing)
