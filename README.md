@@ -1,6 +1,6 @@
 # caesar
 
-The goal of this project is to implement caesar cipher (and others).
+The goal of this project is to implement caesar cipher, morse code cipher and others.
 
 
 ### Building
