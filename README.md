@@ -12,7 +12,7 @@ javac Main.java
 ### Usage
 Just run
 ```
-java Main CIPHER MODE FILE
+java Main.java CIPHER MODE FILE
 ```
 
 Available ciphers are:
