@@ -1,6 +1,6 @@
 # caesar
 
-The goal of this project is to implement caesar cipher, morse code cipher and others.
+The goal of this project is to implement the caesar cipher, morse code cipher and others using java.
 
 
 ### Building
@@ -12,8 +12,12 @@ javac Main.java
 ### Usage
 Just run
 ```
-java Main MODE FILE
+java Main CIPHER MODE FILE
 ```
+
+Available ciphers are:
+- `CAESAR`
+- `MORSE`
 
 Available modes are:
 - `DECODE`

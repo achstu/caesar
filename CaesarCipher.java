@@ -1,4 +1,5 @@
-public class CaesarCipher extends Cipher {
+// TODO - fix
+public class CaesarCipher extends Ciphers {
     private int shift;   // Number of positions to shift letters to the left
 
     public CaesarCipher(int shift) {
@@ -10,7 +11,7 @@ public class CaesarCipher extends Cipher {
     }
 
     @Override
-    public String encode(String text) {
+    public static String encode(String text) {
         String encodedText = "";
 
         for (int i = 0; i < text.length(); i++) {
@@ -33,7 +34,7 @@ public class CaesarCipher extends Cipher {
     }
 
     @Override
-    public String decode(String text) {
+    public static String decode(String text) {
         String decodedText = "";
 
         for (int i = 0; i < text.length(); i++) {

@@ -9,25 +9,39 @@ public class Main {
   public static void help() {
     System.err.println("Usage: cezar MODE FILE");
     System.err.println("");
+    System.err.println("Available ciphers: CAESAR, MORSE");
     System.err.println("Available modes: DECODE, ENCODE, PASS");
     System.exit(1);
   }
 
   public static void main(String[] args) throws Exception {
-    if (args.length != 2) {
+    if (args.length != 3) {
       help();
     }
 
-    String mode = args[0];
+    String cipher = args[0];
+    String mode = args[1];
 
-    String file = args[1];
+    String file = args[2];
     String text = Files.readString(Paths.get(file), StandardCharsets.UTF_8);
 
-    switch (mode) {
-      case "DECODE" -> System.out.println(Ciphers.decode(text));
-      case "ENCODE" -> System.out.println(Ciphers.encode(text));
-      case "PASS" -> System.out.println(text);
-      default -> help();
+    switch (cipher) {
+      case "CAESAR":
+        switch (mode) {
+          case "DECODE" -> System.out.println(CaesarCipher.decode(text));
+          case "ENCODE" -> System.out.println(CaesarCipher.encode(text));
+          case "PASS" -> System.out.println(text);
+          default -> help();
+        }
+        break;
+      case "MORSE":
+        switch (mode) {
+          case "DECODE" -> System.out.println(MorseCipher.decode(text));
+          case "ENCODE" -> System.out.println(MorseCipher.encode(text));
+          case "PASS" -> System.out.println(text);
+          default -> help();
+        }
+        break;
     }
   }
 }
