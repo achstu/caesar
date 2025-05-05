@@ -7,7 +7,7 @@ import java.io.IOException; // TODO: handling IOException better
 public class Main {
 
   public static void help() {
-    System.err.println("Usage: java Main.java CIPHER MODE FILE");
+    System.err.println("Usage: java Main CIPHER MODE FILE");
     System.err.println("");
     System.err.println("Available ciphers: CAESAR, MORSE");
     System.err.println("Available modes: DECODE, ENCODE, PASS");
