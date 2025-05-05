@@ -1,16 +1,15 @@
 public class CaesarCipher extends Ciphers {
-    private int shift;   // Number of positions to shift letters to the left
+    private static final int DEFAULT_SHIFT = 3;
 
-    public CaesarCipher(int shift) {
-        this.shift = shift;
-    }
-
-    public void setShift(int shift) {
-        this.shift = shift;
-    }
-
-    @Override
     public static String encode(String text) {
+        return encode(text, DEFAULT_SHIFT);
+    }
+
+    public static String decode(String text) {
+        return decode(text, DEFAULT_SHIFT);
+    }
+
+    public static String encode(String text, int shift) {
         String encodedText = "";
 
         for (int i = 0; i < text.length(); i++) {
@@ -32,8 +31,7 @@ public class CaesarCipher extends Ciphers {
         return encodedText;
     }
 
-    @Override
-    public static String decode(String text) {
+    public static String decode(String text, int shift) {
         String decodedText = "";
 
         for (int i = 0; i < text.length(); i++) {
