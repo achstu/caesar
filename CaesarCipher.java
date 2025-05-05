@@ -1,7 +1,11 @@
 public class CaesarCipher extends Cipher {
     private int shift;   // Number of positions to shift letters to the left
 
-    public static void setShift(int shift) {
+    public CaesarCipher(int shift) {
+        this.shift = shift;
+    }
+
+    public void setShift(int shift) {
         this.shift = shift;
     }
 
