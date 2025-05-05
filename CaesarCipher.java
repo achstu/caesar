@@ -1,4 +1,4 @@
-public class CaesarCipher extends Ciphers {
+public class CaesarCipher implements Ciphers {
     private static final int DEFAULT_SHIFT = 3;
 
     public static String encode(String text) {

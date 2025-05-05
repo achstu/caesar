@@ -1,4 +1,4 @@
-public class MorseCipher extends Ciphers {
+public class MorseCipher implements Ciphers {
     private static String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", 
                               "--.", "....", "..", ".---", "-.-", ".-..", "--", 
                               "-.", "---", ".--.", "--.-", ".-.", "...", "-", 
