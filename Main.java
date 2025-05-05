@@ -27,6 +27,7 @@ public class Main {
 
     switch (cipher) {
       case "CAESAR":
+        //TODO - fix
         switch (mode) {
           case "DECODE" -> System.out.println(CaesarCipher.decode(text));
           case "ENCODE" -> System.out.println(CaesarCipher.encode(text));

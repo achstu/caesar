@@ -1,4 +1,3 @@
-// TODO - fix
 public class CaesarCipher extends Ciphers {
     private int shift;   // Number of positions to shift letters to the left
 
